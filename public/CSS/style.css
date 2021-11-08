@@ -1,0 +1,81 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 400;
+    margin: 0em;
+}
+
+header.principal {
+    background-color:#EAC926;
+    padding: 5% 5% 5%;
+}
+
+main {
+    padding: 0% 5% 5%;
+    background-color: #ebebeb;
+}
+
+footer.principal {
+    padding: 0% 5% 5%;
+}
+
+
+h2 {
+    font-size: 24px;
+}
+
+h3{
+    font-size: 18px;
+}
+
+h4.descuento {
+    font-size: 16px;
+}
+
+p.descripcion {
+    font-size: 16px;
+}
+
+p {
+    font-size: 12px;
+}
+
+li {
+    font-size: 12px;
+}
+
+.burger-menu {
+    text-align: center;
+    color: white;
+}
+
+div.burger-menu i {
+    background-color: #1259c3;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+div.credit-card i {
+    color: #1259c3;
+    margin-bottom: opx;
+    font-size: 2em;
+}
+
+div.gift i {
+    color: #1259c3;
+    margin-bottom: 0px;
+    font-size: 2em;
+}
+
+div.security i {
+    color: #1259c3;
+    margin-bottom: 0px;
+    font-size: 2em;
+}
+
+section.centrar {
+    text-align: center;
+}
+
+#banner {
+    padding: 0px;
+}
