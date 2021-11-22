@@ -1,4 +1,6 @@
 * {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -15,6 +17,12 @@ header.principal {
     padding: 20px;
 }
 
+main.principal {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
 
 footer.principal {
     padding: 5% 5% 5%;
@@ -26,18 +34,18 @@ footer.principal {
 }
 
 .buscador {
-    display: inline;
+    display: block;
     background-color: white;
     border: solid #ebebeb 1px;
     border-radius: 3px;
     padding: 3px 3px 3px;
-    margin-top: 50px;
-    color: #666;
+    color: #666666;
 }
 
 .lupa {
     width: 30px;
     font-size: 14px;
+    margin-left: 5px;
 }
 
 .cuotas {
@@ -64,31 +72,54 @@ footer.principal {
     font-size: 13px;
 }
 
-#site {
+.site {
     display: none;
 }
 
-#login {
+.login {
     display: none;
+}
+
+article {
+    margin-bottom: 10px;
+    background-color: #ffffff;
+}
+
+article main {
+    border-top: 1px solid #ebebeb;
+    text-align: left ;
+    padding: 15px;
+    line-height: 1.5rem;
 }
 
 h2 {
     font-size: 24px;
     color: #666;
+    display: block;
+    width: 100%;
+    margin: 15px 0px;
+    text-align: left;
 }
 
 footer h4 {
     color: #666;
-    margin: 2px;
+    margin: 2px 0px;
+}
+
+.precio-desc {
+    display: flex;
+    justify-content: space-between;
 }
 
 p.precio {
     font-size: 18px;
+    margin-right: 10px;
 }
 
 p.descuento {
     font-size: 16px;
     color: #39b54a;
+    width: 70%;
 }
 
 p.descripcion {
@@ -102,27 +133,6 @@ p.descripcion {
 p {
     font-size: 12px;
     margin: 0px;
-}
-
-article {
-    margin-bottom: 10px;
-    background-color: #ffffff;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-article main {
-    margin-top: 0px;
-    border-top: 1px solid #ebebeb;
-    text-align: left ;
-    padding: 15px;
-    line-height: 1.5rem;
-}
-
-header.image {
-    margin: 0px;
-    padding: 0px;
 }
 
 li {
@@ -142,14 +152,23 @@ a.burger-menu i {
     border-radius: 5px;
 }
 
+.truck {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
 div.truck i {
-    width: 2.2rem;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
     color: #39b54a;
+    background-color: #ffffff;
     border: 1px solid #39b54a;
-    border-radius: 20px;
-    padding: 0.5rem;
-    text-align: center;
-    margin-bottom: 5px;
+    border-radius: 50%;
+    margin: -25px 15px 0px 0px;
 }
 
 div.credit-card i {
@@ -184,12 +203,43 @@ footer section {
 }
 
 
-@media (min-width: 361px) {
+@media (min-width: 480px) {
 
     .header-top {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-items: center;
+    }
+
+    .search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cuotas {
+        margin: 0px;
+    }
+
+    .main-navbar ul {
+        display: flex;
+    }
+
+    .main-navbar li {
+        margin: 0px 6px;
+    }
+
+    main.principal section {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .principal section article {
+        width: 48%;
     }
 
     p.descripcion {
@@ -218,5 +268,26 @@ footer section {
     .cuotas {
         max-width: 150px;
         text-align: right;
+    }
+
+    .principal section article {
+        width: 23%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .header-top {
+        max-width: 1280px;
+        margin: auto;
+    }
+
+    .cuotas {
+        max-width: none;
+        text-align: right;
+    }
+
+    .main-navbar {
+        max-width: 1280px;
+        margin: auto;
     }
 }
